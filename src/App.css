@@ -1,0 +1,50 @@
+@import "modern-normalize";
+
+:root {
+  line-height: 1.5;
+  background: linear-gradient(90deg, rgb(54, 54, 54), rgb(109, 108, 108), rgb(54, 54, 54));
+}
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+  margin: 0;
+}
+
+ol, ul {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+nav {
+  height: 60px;
+  background-color: black;
+  opacity: 0.75;
+}
+
+main {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(10, 1fr);
+}
+
+footer {
+  height: 200px;
+  background-color: black;
+  opacity: 0.75;
+  margin-top: auto;
+}
