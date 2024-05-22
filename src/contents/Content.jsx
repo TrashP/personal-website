@@ -1,14 +1,12 @@
 import Header from './Header';
-import Aside from './Aside';
 import SectionIntro from './SectionIntro';
 
 function Content() {
   return (
-    <main>
+    <div className="contentLayout">
       <Header />
-      <Aside />
       <SectionIntro />
-    </main>
+    </div>
   );
 }
 

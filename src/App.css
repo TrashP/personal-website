@@ -25,9 +25,9 @@ img {
 }
 
 #root {
-  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 50px;
 }
 
@@ -37,14 +37,33 @@ nav {
   opacity: 0.75;
 }
 
+.contentLayout {
+  max-width: 600px;
+}
+
 main {
-  display: grid;
-  grid-template: repeat(3, 1fr) / repeat(10, 1fr);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header {
+  background-color: aliceblue;
+}
+
+aside {
+  background-color: aliceblue;
+  position: sticky;
+  top: 50px;
+  max-height: 500px;
+  margin-top: 50px;
+}
+
+section {
+  background-color: aliceblue;
 }
 
 footer {
   height: 200px;
   background-color: black;
   opacity: 0.75;
-  margin-top: auto;
 }
