@@ -29,6 +29,7 @@ img {
   flex-direction: column;
   justify-content: space-between;
   gap: 50px;
+  font-size: 1.1rem;
 }
 
 nav {
@@ -37,29 +38,43 @@ nav {
   opacity: 0.75;
 }
 
-.contentLayout {
-  max-width: 600px;
-}
-
 main {
   display: flex;
   justify-content: space-evenly;
 }
 
-header {
+.contentLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+p {
+  max-width: 65ch;
+}
+
+header, section {
   background-color: aliceblue;
+  padding: 30px;
+  border-radius: 10px;
+  width: min(1000px, 80vw);
 }
 
 aside {
   background-color: aliceblue;
+  padding: 30px;
+  border-radius: 10px;
   position: sticky;
   top: 50px;
   max-height: 500px;
-  margin-top: 50px;
+  margin-top: 150px;
+  width: 200px;
 }
 
-section {
-  background-color: aliceblue;
+@media (max-width: 1500px) {
+  aside {
+    display: none;
+  }
 }
 
 footer {
