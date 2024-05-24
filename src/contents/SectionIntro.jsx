@@ -43,7 +43,11 @@ function SectionIntro() {
         excites me. Creating new user experiences, implementing eye pleasing
         designs, and making them come to life with animations is what I do best.
         I hope to continue learning more and more about this profession and
-        build my career in this field.
+        build my career in this field. I've been self-learning CS and web dev is
+        the area that really excites me. Creating new user experiences,
+        implementing eye pleasing designs, and making them come to life with
+        animations is what I do best. I hope to continue learning more and more
+        about this profession and build my career in this field.
       </p>
     </section>
   );

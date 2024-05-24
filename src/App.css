@@ -1,6 +1,9 @@
 @import "modern-normalize";
+@import "./HeaderAnimations.css";
 
 :root {
+  --color-light-bg: #ffffff;
+  --color-dark-bg: #383737;
   line-height: 1.5;
   background: linear-gradient(90deg, rgb(54, 54, 54), rgb(109, 108, 108), rgb(54, 54, 54));
 }
@@ -49,26 +52,48 @@ main {
   gap: 50px;
 }
 
+ul {
+  color: var(--color-dark-bg);
+}
+
 p {
   max-width: 65ch;
+  color: var(--color-dark-bg);
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 3rem;
 }
 
 header, section {
-  background-color: aliceblue;
-  padding: 30px;
+  background-color: var(--color-light-bg);
+  padding: 50px;
   border-radius: 10px;
   width: min(1000px, 80vw);
 }
 
+header {
+  margin-top: 5rem;
+  margin-bottom: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 aside {
-  background-color: aliceblue;
+  background-color: var(--color-light-bg);
   padding: 30px;
   border-radius: 10px;
   position: sticky;
   top: 50px;
   max-height: 500px;
   margin-top: 150px;
-  width: 200px;
+  width: 250px;
 }
 
 @media (max-width: 1500px) {
