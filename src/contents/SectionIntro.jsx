@@ -1,6 +1,10 @@
-function SectionIntro() {
+/* eslint-disable react/no-unescaped-entities */
+import { forwardRef } from 'react';
+
+const SectionIntro = forwardRef(function (props, ref) {
   return (
     <section>
+      <h3 ref={ref}>About me</h3>
       <p>
         Hi there! I'm Arnab, an aspiring web dev. I'm moving towards a new
         direction in my career and my life. For the past year, I've been
@@ -51,6 +55,8 @@ function SectionIntro() {
       </p>
     </section>
   );
-}
+});
+
+SectionIntro.displayName = 'SectionIntro';
 
 export default SectionIntro;

@@ -1,9 +1,9 @@
 @import "modern-normalize";
-@import "./HeaderAnimations.css";
+@import "./contents/HeaderAnimations.css";
+@import "./contents/buttons/ScrollDown.css";
+@import "./colors.css";
 
 :root {
-  --color-light-bg: #ffffff;
-  --color-dark-bg: #383737;
   line-height: 1.5;
   background: linear-gradient(90deg, rgb(54, 54, 54), rgb(109, 108, 108), rgb(54, 54, 54));
 }
@@ -49,6 +49,7 @@ main {
 .contentLayout {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 50px;
 }
 
@@ -70,6 +71,31 @@ h2 {
   font-size: 3rem;
 }
 
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
 header, section {
   background-color: var(--color-light-bg);
   padding: 50px;
@@ -79,10 +105,14 @@ header, section {
 
 header {
   margin-top: 5rem;
-  margin-bottom: 15rem;
+  margin-bottom: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+header p {
+  color: var(--color-light-secondary);
 }
 
 aside {
