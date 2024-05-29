@@ -1,6 +1,8 @@
 :root {
     --color-light-bg: #ffffff;
     --color-dark-bg: #383737;
+    --color-gradient-end: rgb(54, 54, 54);
+    --color-gradient-center: rgb(109, 108, 108);
     --color-dark-primary: #BB86FC;
     --color-light-primary: #6200EE;
     --color-dark-secondary: #03DAC6;

@@ -6,7 +6,23 @@
 
 :root {
   line-height: 1.5;
-  background: linear-gradient(90deg, rgb(54, 54, 54), rgb(109, 108, 108), rgb(54, 54, 54));
+  background: linear-gradient(90deg, var(--color-gradient-end), var(--color-gradient-center), var(--color-gradient-end));
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 h1, h2, h3, h4, h5, figure, p, ol, ul {
