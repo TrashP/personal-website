@@ -1,4 +1,4 @@
-import Header from './Header';
+import Header from './header/Header';
 import SectionIntro from './SectionIntro';
 import ScrollDown from './buttons/ScrollDown';
 import { useRef } from 'react';
@@ -9,6 +9,7 @@ function Content() {
   return (
     <div className="contentLayout">
       <Header />
+      {/* ref passed up from SectionIntro is passed as prop down to ScrollDown button */}
       <ScrollDown scrollRef={ref} />
       <SectionIntro ref={ref} />
     </div>

@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Scroll down button > Renders scroll down button 1`] = `
+<div>
+  <button
+    class="scroll"
+    data-testid="id"
+    type="button"
+  >
+    Scroll Down
+  </button>
+</div>
+`;

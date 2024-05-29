@@ -1,7 +1,8 @@
 @import "modern-normalize";
-@import "./contents/HeaderAnimations.css";
+@import "./contents/header/HeaderAnimations.css";
 @import "./contents/buttons/ScrollDown.css";
 @import "./colors.css";
+@import './contents/imageSlider/ImageSlider.css';
 
 :root {
   line-height: 1.5;
@@ -60,6 +61,7 @@ ul {
 p {
   max-width: 65ch;
   color: var(--color-dark-bg);
+  margin-top: 1rem;
 }
 
 h1 {
@@ -94,6 +96,7 @@ h2 {
 h3 {
   font-size: 2rem;
   text-align: center;
+  margin-top: 2rem;
 }
 
 header, section {
@@ -101,14 +104,19 @@ header, section {
   padding: 50px;
   border-radius: 10px;
   width: min(1000px, 80vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header {
   margin-top: 5rem;
   margin-bottom: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  
+}
+
+section {
+  padding: 20px;
 }
 
 header p {

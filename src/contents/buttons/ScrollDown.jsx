@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+
+// ref to sibling element is passed down as prop from common parent
 const ScrollDown = function ({ scrollRef }) {
   const handleClick = () => {
     scrollRef.current?.scrollIntoView({ behavior: 'smooth' });
