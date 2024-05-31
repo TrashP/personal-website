@@ -17,6 +17,7 @@ const ImageSlider = function () {
         alt="python logo"
         name="PYTHON"
         href="https://www.flaticon.com/free-icons/python"
+        link="https://www.python.org/"
       />
 
       <ImageDiv
@@ -24,6 +25,7 @@ const ImageSlider = function () {
         alt="javascript logo"
         name="JAVASCRIPT"
         href="https://www.flaticon.com/free-icons/javascript"
+        link="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
       />
 
       <ImageDiv
@@ -31,6 +33,7 @@ const ImageSlider = function () {
         alt="html 5 logo"
         name="HTML"
         href="https://www.flaticon.com/free-icons/html"
+        link="https://developer.mozilla.org/en-US/docs/Web/HTML"
       />
 
       <ImageDiv
@@ -38,28 +41,55 @@ const ImageSlider = function () {
         alt="css logo"
         name="CSS"
         href="https://www.flaticon.com/free-icons/css"
+        link="https://developer.mozilla.org/en-US/docs/Web/CSS"
       />
 
-      <ImageDiv src={webpackLogo} alt="webpack logo" name="WEBPACK" href="" />
+      <ImageDiv
+        src={webpackLogo}
+        alt="webpack logo"
+        name="WEBPACK"
+        href=""
+        link="https://webpack.js.org/"
+      />
 
-      <ImageDiv src={npmLogo} alt="npm logo" name="NPM" href="" />
+      <ImageDiv
+        src={npmLogo}
+        alt="npm logo"
+        name="NPM"
+        href=""
+        link="https://www.npmjs.com/"
+      />
 
       <ImageDiv
         src={gitLogo}
         alt="git logo"
         name="GIT"
         href="https://www.flaticon.com/free-icons/commit-git"
+        link="https://git-scm.com/"
       />
 
-      <ImageDiv src={reactLogo} alt="react logo" name="REACT" href="" />
+      <ImageDiv
+        src={reactLogo}
+        alt="react logo"
+        name="REACT"
+        href=""
+        link="https://react.dev/"
+      />
 
-      <ImageDiv src={viteLogo} alt="vite logo" name="VITE" href="" />
+      <ImageDiv
+        src={viteLogo}
+        alt="vite logo"
+        name="VITE"
+        href=""
+        link="https://vitejs.dev/"
+      />
 
       <ImageDiv
         src={pythonLogo}
         alt="python logo"
         name="PYTHON"
         href="https://www.flaticon.com/free-icons/python"
+        link="https://www.python.org/"
       />
 
       <ImageDiv
@@ -67,6 +97,7 @@ const ImageSlider = function () {
         alt="javascript logo"
         name="JAVASCRIPT"
         href="https://www.flaticon.com/free-icons/javascript"
+        link="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
       />
 
       <ImageDiv
@@ -74,6 +105,7 @@ const ImageSlider = function () {
         alt="html 5 logo"
         name="HTML"
         href="https://www.flaticon.com/free-icons/html"
+        link="https://developer.mozilla.org/en-US/docs/Web/HTML"
       />
 
       <ImageDiv
@@ -81,33 +113,61 @@ const ImageSlider = function () {
         alt="css logo"
         name="CSS"
         href="https://www.flaticon.com/free-icons/css"
+        link="https://developer.mozilla.org/en-US/docs/Web/CSS"
       />
 
-      <ImageDiv src={webpackLogo} alt="webpack logo" name="WEBPACK" href="" />
+      <ImageDiv
+        src={webpackLogo}
+        alt="webpack logo"
+        name="WEBPACK"
+        href=""
+        link="https://webpack.js.org/"
+      />
 
-      <ImageDiv src={npmLogo} alt="npm logo" name="NPM" href="" />
+      <ImageDiv
+        src={npmLogo}
+        alt="npm logo"
+        name="NPM"
+        href=""
+        link="https://www.npmjs.com/"
+      />
 
       <ImageDiv
         src={gitLogo}
         alt="git logo"
         name="GIT"
         href="https://www.flaticon.com/free-icons/commit-git"
+        link="https://git-scm.com/"
       />
 
-      <ImageDiv src={reactLogo} alt="react logo" name="REACT" href="" />
+      <ImageDiv
+        src={reactLogo}
+        alt="react logo"
+        name="REACT"
+        href=""
+        link="https://react.dev/"
+      />
 
-      <ImageDiv src={viteLogo} alt="vite logo" name="VITE" href="" />
+      <ImageDiv
+        src={viteLogo}
+        alt="vite logo"
+        name="VITE"
+        href=""
+        link="https://vitejs.dev/"
+      />
     </div>
   );
 };
 
-const ImageDiv = function ({ src, alt, name, href }) {
+const ImageDiv = function ({ src, alt, name, href, link }) {
   return (
-    <div>
-      <img src={src} alt={alt} />
-      <a href={href} />
-      <p>{name}</p>
-    </div>
+    <a href={link} target="_blank">
+      <div>
+        <img src={src} alt={alt} />
+        <a href={href} />
+        <p>{name}</p>
+      </div>
+    </a>
   );
 };
 

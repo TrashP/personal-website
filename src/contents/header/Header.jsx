@@ -3,9 +3,9 @@ function Header() {
   return (
     <header>
       <p>Hi there, I'm</p>
-      <h1>ARNAB GOSWAMI</h1>
+      <h1>Arnab Goswami</h1>
       <p>an aspiring</p>
-      <h2>SOFTWARE DEVELOPER</h2>
+      <h2>Software Developer</h2>
     </header>
   );
 }

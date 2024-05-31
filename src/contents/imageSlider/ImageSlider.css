@@ -15,10 +15,10 @@ section {
 
 @keyframes slide {
     0% {
-        transform: translateX(750px);
+        transform: translateX(720px);
     }
     100% {
-        transform: translateX(calc((-135px * 9) + 750px));
+        transform: translateX(calc((-135px * 9) + 720px));
     }
 }
 
@@ -29,6 +29,18 @@ section {
     width: 120px;
     height: 120px;
     background-color: rgb(70, 69, 69);
+}
+
+#imageSlider div:hover {
+    transform: scale(1.1);
+}
+
+#imageSlider.pause {
+    animation-play-state: paused;
+}
+
+#imageSlider:hover {
+    animation-play-state: paused;
 }
 
 #imageSlider div p {

@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { forwardRef } from 'react';
 import ImageSlider from './imageSlider/ImageSlider';
+import PauseSlider from './buttons/PauseSlider';
 
 // forwardRef wrapper is used pass ref to parent element
 const SectionIntro = forwardRef(function (props, ref) {
@@ -33,7 +34,9 @@ const SectionIntro = forwardRef(function (props, ref) {
         I'm up for it!
       </p>
 
-      <h3>Languages, Tools, and Frameworks</h3>
+      <h3>
+        Languages, Tools, and Frameworks <PauseSlider />
+      </h3>
 
       <ImageSlider />
     </section>

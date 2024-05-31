@@ -1,6 +1,6 @@
 @import '../../colors.css';
 
-button.scroll {
+button.scroll, button.pause {
 display: block;
 background-color: var(--color-light-bg);
 border: solid 1px black;
@@ -14,9 +14,23 @@ transition-duration: 0.2s;
 transition-timing-function: ease-out;
 }
 
-button.scroll:hover {
+button.pause {
+    display: inline;
+    margin-left: 1rem;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 0;
+    padding-bottom: 0.15rem;
+    font-size: 1.6rem;
+}
+
+button.scroll:hover, button.pause:hover {
     border: solid 2px var(--color-dark-secondary);
     color: var(--color-light-secondary);
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+button.pause:hover {
+    border: solid 1px var(--color-dark-secondary);
 }
