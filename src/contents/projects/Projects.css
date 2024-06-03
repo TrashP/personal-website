@@ -1,0 +1,46 @@
+@import '../../colors.css';
+
+.project {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project img {
+    max-width: 600px;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+.projectDescription {
+    background-color: rgb(78, 77, 77);
+    width: min(500px, 60vw);
+    padding: 2rem;
+    padding-top: 1.5rem;
+    border-radius: 10px;
+}
+
+.projectDescription p {
+    color: rgb(238, 235, 235);
+}
+
+.projectLink {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.projectDescription a {
+    color: var(--color-dark-secondary);
+    text-decoration: none;
+}
+
+.projectDescription a:hover {
+    text-decoration: underline;
+}
+
+.line {
+    border: solid 2px rgb(167, 165, 165);
+    margin: 1rem;
+}

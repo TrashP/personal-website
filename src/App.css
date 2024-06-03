@@ -2,7 +2,8 @@
 @import "./contents/header/HeaderAnimations.css";
 @import "./contents/buttons/ScrollDown.css";
 @import "./colors.css";
-@import './contents/imageSlider/ImageSlider.css';
+@import "./contents/imageSlider/ImageSlider.css";
+@import "./contents/projects/Projects.css";
 
 :root {
   line-height: 1.5;

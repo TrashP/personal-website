@@ -28,7 +28,7 @@ section {
     align-items: center;
     width: 120px;
     height: 120px;
-    background-color: rgb(70, 69, 69);
+    background-color: var(--color-dark-div);
 }
 
 #imageSlider div:hover {
