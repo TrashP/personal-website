@@ -1,16 +1,55 @@
 @import '../../colors.css';
 
 .project {
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .project img {
     max-width: 600px;
     border: solid 1px black;
     border-radius: 5px;
+    transition: transform 0.2s ease-out;
+}
+
+.project img:hover, .projectDescription:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.project img.moveTop:hover {
+    cursor: auto;
+}
+
+.project img.moveTop {
+    animation: 0.8s moveTop;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveTop {
+    0% {
+        transform: translateX(0);
+        z-index: 0;
+    }
+
+    49% {
+        transform: translateX(-10rem);
+        z-index: 0;
+    }
+
+    50% {
+        transform: translateX(-10rem);
+        z-index: 1;
+    }
+
+    100% {
+        transform: translateX(-3rem);
+        z-index: 1;
+    }
 }
 
 .projectDescription {
@@ -19,6 +58,22 @@
     padding: 2rem;
     padding-top: 1.5rem;
     border-radius: 10px;
+    position: absolute;
+    top: 5rem;
+    left: 10rem;
+}
+
+@media (max-width: 900px) {
+    .project {
+        position: static;
+        margin-bottom: -5rem;
+    }
+
+    .projectDescription {
+        position: relative;
+        top: -10rem;
+        left: 0;
+    }
 }
 
 .projectDescription p {
