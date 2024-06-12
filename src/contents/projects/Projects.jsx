@@ -3,12 +3,14 @@ import tictactoe from '../../assets/tic-tac-toe.png';
 import React from 'react';
 
 function Projects() {
+  // Toggle class to trigger animation for images
   const handleImageClick = (e) => {
     if (!e.target.classList.contains('moveTop')) {
       e.target.classList.toggle('moveTop');
     }
   };
 
+  // Toggle class to trigger animation for divs
   const handleDescClick = (e) => {
     if (
       e.target.classList.contains('line') ||
@@ -41,6 +43,7 @@ function Projects() {
     }
   };
 
+  // Click event listeners to start animation
   React.useEffect(() => {
     const images = document.querySelectorAll('.projectImage');
     for (let i = 0; i < images.length; i++) {

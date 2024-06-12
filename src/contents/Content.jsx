@@ -2,6 +2,7 @@ import Header from './header/Header';
 import SectionIntro from './SectionIntro';
 import ScrollDown from './buttons/ScrollDown';
 import Projects from './projects/Projects';
+import Certifications from './certifications/Certifications';
 import { useRef } from 'react';
 
 function Content() {
@@ -14,6 +15,7 @@ function Content() {
       <ScrollDown scrollRef={ref} />
       <SectionIntro ref={ref} />
       <Projects />
+      <Certifications />
     </div>
   );
 }

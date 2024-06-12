@@ -1,0 +1,24 @@
+@import '../../colors.css';
+
+.certifications {
+    background-color: #4e4d4d;
+    height: 4rem;
+    vertical-align: middle;
+    line-height: 4rem;
+    border-radius: 5px;
+}
+
+.certLink {
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.2s ease-out;
+}
+
+.certLink:hover {
+    transform: scale(1.05);
+}
+
+.certLink p {
+    color: var(--color-dark-secondary);
+}

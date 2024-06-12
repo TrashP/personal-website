@@ -61,6 +61,7 @@
     position: absolute;
     top: 5rem;
     left: 10rem;
+    transition: transform 0.2s ease-out;
 }
 
 @media (max-width: 900px) {

@@ -4,6 +4,7 @@
 @import "./colors.css";
 @import "./contents/imageSlider/ImageSlider.css";
 @import "./contents/projects/Projects.css";
+@import "./contents/certifications/Certifications.css";
 
 :root {
   line-height: 1.5;
@@ -126,14 +127,21 @@ header, section {
   align-items: center;
 }
 
+h4 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  text-align: left;
+  width: 70%;
+}
+
 header {
   margin-top: 5rem;
   margin-bottom: 5rem;
-  
 }
 
 section {
   padding: 20px;
+  padding-bottom: 50px;
 }
 
 header p {
