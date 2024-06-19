@@ -1,12 +1,13 @@
+/* eslint-disable react/no-unescaped-entities */
 function Footer() {
   return (
     <footer>
+      <h3>Contact me</h3>
       <p>
-        Hi there! I'm Arnab, an aspiring web dev. I'm moving towards a new
-        direction in my career and my life. For the past year, I've been
-        self-learning CS and web dev is the area that really excites me.
-        Creating new user experiences,
+        I'm looking for job opportunities right now. Feel free to email me if
+        you have any questions and I'll get back to you.
       </p>
+      <p>arnabdnri@gmail.com</p>
     </footer>
   );
 }
