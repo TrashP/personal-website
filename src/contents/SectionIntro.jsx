@@ -8,7 +8,9 @@ const SectionIntro = forwardRef(function (props, ref) {
   return (
     <section>
       {/* ref used in h3 element to scroll into view on click */}
-      <h3 ref={ref}>About me</h3>
+      <h3 ref={ref} id="aboutMe">
+        About me
+      </h3>
 
       <p>
         I'm moving towards a new direction in my career and my life. For the

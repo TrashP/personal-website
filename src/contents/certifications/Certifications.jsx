@@ -1,7 +1,7 @@
 function Certifications() {
   return (
     <section>
-      <h3>Certifications</h3>
+      <h3 id="certifications">Certifications</h3>
       <h4>freeCodeCamp Certifications</h4>
       <SoftwareCert
         name="Responsive Web Design"

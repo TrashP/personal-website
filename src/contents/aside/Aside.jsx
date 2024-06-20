@@ -2,11 +2,21 @@ function Aside() {
   return (
     <aside>
       <ul>
-        <li>assdassa</li>
-        <li>shhtrh</li>
-        <li>tthhthsht</li>
-        <li>trshthtsr</li>
-        <li>srthstst</li>
+        <li>
+          <a href="#nav">Intro</a>
+        </li>
+        <li>
+          <a href="#aboutMe">About me</a>
+        </li>
+        <li>
+          <a href="#softwareProjects">Software Projects</a>
+        </li>
+        <li>
+          <a href="#certifications">Certifications</a>
+        </li>
+        <li>
+          <a href="#certifications">Contact</a>
+        </li>
       </ul>
     </aside>
   );

@@ -58,6 +58,25 @@ nav {
   height: 60px;
   background-color: black;
   opacity: 0.75;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 50px;
+  margin-right: 100px;
+}
+
+nav li a {
+  color: var(--color-dark-primary);
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+nav li a:hover {
+  text-decoration: underline;
 }
 
 main {
@@ -154,9 +173,24 @@ aside {
   border-radius: 10px;
   position: sticky;
   top: 50px;
-  max-height: 500px;
+  max-height: 400px;
   margin-top: 150px;
-  width: 250px;
+  width: 270px;
+  font-size: 1.5rem;
+}
+
+aside li {
+  margin-bottom: 20px;
+}
+
+aside li a {
+  color: rgb(104, 103, 103);
+  text-decoration: none;
+}
+
+aside li a:hover {
+  color: rgb(34, 34, 34);
+  cursor: pointer;
 }
 
 @media (max-width: 1500px) {

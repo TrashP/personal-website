@@ -72,7 +72,7 @@ function Projects() {
 
   return (
     <section>
-      <h3>Software Projects</h3>
+      <h3 id="softwareProjects">Software Projects</h3>
       <SoftwareProject
         screen={memory}
         alt="screenshot of pokemon memory game project"
