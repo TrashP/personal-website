@@ -1,5 +1,6 @@
 import memory from '../../assets/pokemon-memory.png';
 import tictactoe from '../../assets/tic-tac-toe.png';
+import netflixData from '../../assets/netflixData.png';
 import React from 'react';
 
 function Projects() {
@@ -73,6 +74,17 @@ function Projects() {
   return (
     <section>
       <h3 id="softwareProjects">Software Projects</h3>
+      <SoftwareProject
+        screen={netflixData}
+        alt="screenshot of netflix data analysis project"
+        desc="A data analysis project to analyze trends in my Netflix viewing 
+        habits. I performed some data cleaning and preprocessing to get it in 
+        the desired format for analysis. This was performed using the Pandas 
+        library in python and the Seaborn library was used for visualizing the 
+        data."
+        github="https://github.com/TrashP/netflix-data-analysis"
+        site="https://arnab-data-analysis.netlify.app/"
+      />
       <SoftwareProject
         screen={memory}
         alt="screenshot of pokemon memory game project"
