@@ -15,11 +15,6 @@ function Nav() {
             GitHub
           </a>
         </li>
-        <li>
-          <a href="" target="_blank">
-            CV
-          </a>
-        </li>
       </ul>
     </nav>
   );
